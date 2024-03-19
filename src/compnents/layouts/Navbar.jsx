@@ -5,6 +5,7 @@ import List from '../utilities/List'
 import ListItem from '../utilities/ListItem'
 import { NavLink } from 'react-router-dom'
 import { FaBarsStaggered } from "react-icons/fa6";
+import Container from '../utilities/Container'
 
 const Navbar = () => {
   let [show, setShow] = useState(true)
@@ -24,38 +25,40 @@ const Navbar = () => {
     setShow(!show)
   }
   return (
-    <section className='max-w-container mx-auto py-8'>
-        <div className="lg:flex lg:gap-[544px] justify-between items-center px-2.5">
+    <nav>
+      <Container>
+        <div className="lg:flex lg:gap-[544px] justify-between items-center py-8">
           <div className="">
               <Image className="w-[65px] h-[15px] overflow-hidden" sourc={Logo} alt="alt"/>
           </div>
           <div className="">
             <div className="">
-              <FaBarsStaggered onClick={handleShow} className='block lg:hidden text-base ml-auto absolute top-8 right-2.5'/>
+              <FaBarsStaggered onClick={handleShow} className='block lg:hidden text-base ml-auto absolute top-8 right-2.5 cursor-pointer'/>
             </div>
             {
               show &&
-            <List className="lg:gap-10 lg:flex lg:justify-end"> 
-            <li>
+            <List className="lg:gap-10 lg:flex mt-10 lg:mt-0"> 
+            <li className="my-2 lg:my-0">
                 <NavLink to="/" className="text-sm font-normal font-dm text-[#767676] capitalize [&.active]:scale-150 [&.active]:text-red-500">home</NavLink>
               </li>
-              <li>
+              <li className="my-2 lg:my-0">
                 <NavLink to="shop" className="text-sm font-normal font-dm text-[#767676] capitalize [&.active]:scale-150 [&.active]:text-red-500">shop</NavLink>
               </li>
-              <li>
+              <li className="my-2 lg:my-0">
                 <NavLink to="about" className="text-sm font-normal font-dm text-[#767676] capitalize [&.active]:scale-150 [&.active]:text-red-500">about</NavLink>
               </li>
-              <li>
+              <li className="my-2 lg:my-0">
                 <NavLink to="journal" className="text-sm font-normal font-dm text-[#767676] capitalize [&.active]:scale-150 [&.active]:text-red-500">journal</NavLink>
               </li>
-              <li>
+              <li className="my-2 lg:my-0">
                 <NavLink to="contact" className="text-sm font-normal font-dm text-[#767676] capitalize [&.active]:scale-150 [&.active]:text-red-500">contact</NavLink>
               </li>
             </List>
             }
           </div>
         </div>
-    </section>
+      </Container>
+    </nav>
   )
 }
 

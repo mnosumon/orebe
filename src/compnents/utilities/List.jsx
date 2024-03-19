@@ -2,7 +2,7 @@ import React from 'react'
 
 const List = ({children, className}) => {
   return (
-    <ul className={`f${className}`}>{children}</ul>
+    <ul className={`${className}`}>{children}</ul>
   )
 }
 
