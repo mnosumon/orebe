@@ -11,7 +11,11 @@ export default {
       },
       maxWidth:{
         'container': "1604px"
-      }
+      },
+      colors: {
+        'primary': '#262626',
+        'scoend': '#979797',
+      },
     },
   },
   plugins: [],
