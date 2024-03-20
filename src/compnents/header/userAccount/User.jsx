@@ -10,7 +10,7 @@ const User = () => {
   return (
     <section className='relative'>
       <Dropdown setShow={setShow}>
-        <div className='flex gap-2.5 cursor-pointer items-center'>
+        <div className='flex lg:gap-2.5 gap-1 cursor-pointer items-center'>
           <FaUser className='text-base' />
           <FaCaretDown className='text-base' />
         </div>

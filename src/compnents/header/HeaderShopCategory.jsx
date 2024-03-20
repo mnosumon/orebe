@@ -12,7 +12,7 @@ const HeaderShopCategory = () => {
           <span className='w-5 h-[3px] bg-[#262626]'></span>
           <span className='w-4 h-[3px] bg-[#262626]'></span>
         </div>
-        <p className='font-dm text-sm text-[#262626] capitalize'>Shop by category</p>
+        <p className='lg:inline-block hidden font-dm text-sm text-[#262626] capitalize'>Shop by category</p>
       </Dropdown>
       {
         show && 

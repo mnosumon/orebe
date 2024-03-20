@@ -12,11 +12,11 @@ const Header = () => {
         <Container>
             <div className="flex justify-between py-6 items-center">
                 <HeaderShopCategory/>
-                <div className="w-[600px] relative">
-                    <Input className="text-[#C4C4C4] py-4 pl-5 pr-10 bg-[#ffffff] w-full" type="text" placeholder="Search Products"  />
-                    <IoSearch className='absolute top-1/2 right-5 -translate-y-1/2 text-base'/>
+                <div className="lg:w-[600px] w-auto relative">
+                    <Input className="text-[#C4C4C4] py-2 lg:py-4 lg:pl-5 pl-3 pr-10 bg-[#ffffff] w-full" type="text" placeholder="Search Products"  />
+                    <IoSearch className='absolute top-1/2 lg:right-5 right-3 -translate-y-1/2 text-base'/>
                 </div>
-                <div className="flex gap-10">
+                <div className="flex lg:gap-10 gap-5">
                   <User/>
                   <Cart/>
                 </div>
