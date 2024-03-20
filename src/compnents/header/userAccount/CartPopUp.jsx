@@ -26,10 +26,10 @@ const CartPopUp = () => {
       </div>
       <List className="flex gap-5 p-5">
         <li className='w-[148px]'>
-          <Ancor content="View Cart"/>
+          <Ancor href="#" content="View Cart"/>
         </li>
         <li className='w-[148px]'>
-          <Ancor content='Checkout'/>
+          <Ancor href="#" content='Checkout'/>
         </li>
       </List>
     </div>

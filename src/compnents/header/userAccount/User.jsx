@@ -2,21 +2,32 @@ import React, { useState } from 'react'
 import { FaUser } from "react-icons/fa";
 import { FaCaretDown } from "react-icons/fa";
 import Dropdown from '../../utilities/Dropdown';
+import List from '../../utilities/List';
+import Ancor from '../../utilities/Ancor';
 
 const User = () => {
   let [show, setShow] = useState(false)
   return (
-    <section>
-      <Dropdown setShow={setShow} className='flex gap-2.5 cursor-pointer items-center'>
+    <section className='relative'>
+      <Dropdown setShow={setShow}>
+        <div className='flex gap-2.5 cursor-pointer items-center'>
           <FaUser className='text-base' />
           <FaCaretDown className='text-base' />
-      </Dropdown>
-      {
+        </div>
+        {
         show &&
-      <div className="bg-red-500 w-[200px] h-10">
-        
-      </div>
+        <div className=" w-[200px] absolute top-7 right-0 border border-primary">
+          <List>
+            <li>
+              <Ancor href="#" className="border-none hover:bg-[#2B2B2B]" content="My Account"/>
+            </li>
+            <li>
+              <Ancor href="#" className="border-none hover:bg-[#2B2B2B]" content="Log Out"/>
+            </li>
+          </List>
+        </div>
       }
+      </Dropdown>
     </section>
   )
 }
