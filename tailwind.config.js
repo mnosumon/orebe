@@ -15,7 +15,12 @@ export default {
       colors: {
         'primary': '#262626',
         'scoend': '#979797',
+        'third': '#F5F5F5',
+        'fourth': '#767676',
       },
+      lineHeight: {
+        'praimary': '23px',
+      }
     },
   },
   plugins: [],
