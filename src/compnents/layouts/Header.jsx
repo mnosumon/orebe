@@ -8,7 +8,7 @@ import Cart from '../header/userAccount/Cart';
 
 const Header = () => {
   return (
-    <header className='bg-[#F5F5F3]'>
+    <header className='bg-[#F5F5F3] border-b border-scoend'>
         <Container>
             <div className="flex justify-between py-6 items-center">
                 <HeaderShopCategory/>

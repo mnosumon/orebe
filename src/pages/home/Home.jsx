@@ -1,8 +1,14 @@
 import React from 'react'
+import Container from '../../compnents/utilities/Container'
+import Banner from '../../compnents/home/Banner'
 
 const Home = () => {
   return (
-    <div>Home</div>
+    <section>
+
+        <Banner/>
+
+    </section>
   )
 }
 
