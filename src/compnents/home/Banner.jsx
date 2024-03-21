@@ -1,9 +1,9 @@
 import React, { useState } from 'react'
+import { Link } from 'react-router-dom';
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
-import BannerImg from '../../assets/svg/banner.svg'
 import Image from '../utilities/Image';
-import { Link } from 'react-router-dom';
+import BannerImg from '../../assets/svg/banner.svg'
 
 const Banner = () => {
   let [dotActive, setDotActive] = useState(0)
@@ -13,7 +13,7 @@ const Banner = () => {
       setDotActive(next);
     },
     arrows: false,
-    autoplay: true,
+    autoplay: false,
     infinite: true,
     speed: 500,
     slidesToShow: 1,
@@ -24,7 +24,7 @@ const Banner = () => {
           position: "absolute",
           top: "50%",
           transform: "translateY(-50%)",
-          left: "4%",
+          left: "3%",
           padding: "10px"
         }}
       >
@@ -66,7 +66,7 @@ const Banner = () => {
                 position: "absolute",
                 top: "50%",
                 transform: "translateY(-50%)",
-                left: "3%",
+                left: "2%",
               }}
             >
               <ul style={{ margin: "0px" }}> {dots} </ul>
@@ -110,7 +110,7 @@ const Banner = () => {
                 position: "absolute",
                 top: "50%",
                 transform: "translateY(-50%)",
-                left: "2%",
+                left: "1%",
               }}
             >
               <ul style={{ margin: "0px" }}> {dots} </ul>
@@ -152,22 +152,22 @@ const Banner = () => {
   };
   return (
     <Slider {...settings}>
-    <div>
-      <Link>
-         <Image sourc={BannerImg}/>
-      </Link>
-    </div>
-    <div>
-      <Link>
-         <Image sourc={BannerImg}/>
-      </Link>
-    </div>
-    <div>
-      <Link>
-         <Image sourc={BannerImg}/>
-      </Link>
-    </div>
-  </Slider>
+      <div className="!block w-full h-auto xl:h-[597px]">
+        <Link className='overflow-hidden outline-none'>
+          <Image sourc={BannerImg} alt="Banner Img"/>
+        </Link>
+      </div>
+      <div className="!block w-full h-auto xl:h-[597px]">
+        <Link className='overflow-hidden outline-none'>
+          <Image sourc={BannerImg} alt="Banner Img"/>
+        </Link>
+      </div>
+      <div className="!block w-full h-auto xl:h-[597px]">
+        <Link className='overflow-hidden outline-none'>
+          <Image sourc={BannerImg} alt="Banner Img"/>
+        </Link>
+      </div>
+    </Slider>
   )
 }
 

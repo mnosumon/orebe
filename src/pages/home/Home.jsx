@@ -1,12 +1,12 @@
 import React from 'react'
-import Container from '../../compnents/utilities/Container'
 import Banner from '../../compnents/home/Banner'
+import Information from '../../compnents/home/Information'
 
 const Home = () => {
   return (
     <section>
-
-        <Banner/>
+      <Banner/>
+      <Information/>
 
     </section>
   )

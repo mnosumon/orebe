@@ -28,8 +28,8 @@ const Navbar = () => {
     <nav>
       <Container>
         <div className="lg:flex lg:gap-[544px] justify-between items-center py-8">
-          <div className="">
-              <Image className="w-[65px] h-[15px] overflow-hidden" sourc={Logo} alt="alt"/>
+          <div className="w-[65px] h-[15px] overflow-hidden">
+              <Image sourc={Logo} alt="alt"/>
           </div>
           <div className="">
             <div className="">
