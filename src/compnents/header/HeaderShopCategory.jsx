@@ -16,7 +16,7 @@ const HeaderShopCategory = () => {
       </Dropdown>
       {
         show && 
-      <List className="bg-primary w-[263px] absolute top-7 left-0">
+      <List className="bg-primary w-[263px] absolute top-7 left-0 z-50">
         <li>
           <Link className='text-sm font-dm text-[#FFFFFF] opacity-70 py-4 px-5 hover:pl-8 hover:text-[#FFF] hover:font-bold hover:opacity-100 ease-in-out duration-300 border-b border-[#2D2D2D] block'>Accesories</Link>
         </li>

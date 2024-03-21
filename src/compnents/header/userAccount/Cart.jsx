@@ -11,7 +11,7 @@ const Cart = () => {
           <FaShoppingCart className='text-lg cursor-pointer' />
           {
         show && 
-        <div className="w-[360px] absolute right-0 top-7">
+        <div className="w-[360px] absolute right-0 top-7 z-50">
             <CartPopUp/>
         </div>
         }

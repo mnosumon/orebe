@@ -16,7 +16,7 @@ const User = () => {
         </div>
         {
         show &&
-        <div className=" w-[200px] absolute top-7 right-0 border border-primary">
+        <div className=" w-[200px] absolute top-7 right-0 border border-primary z-50">
           <List>
             <li>
               <Ancor href="#" className="border-none hover:bg-[#2B2B2B]" content="My Account"/>
