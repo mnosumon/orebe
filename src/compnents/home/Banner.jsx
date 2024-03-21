@@ -1,20 +1,31 @@
-import React from 'react'
+import React, { useState } from 'react'
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
-import "slick-carousel/slick/slick-theme.css";
 import BannerImg from '../../assets/svg/banner.svg'
 import Image from '../utilities/Image';
 import { Link } from 'react-router-dom';
 
 const Banner = () => {
-  var settings = {
+  let [dotActive, setDotActive] = useState(null)
+  const settings = {
     dots: true,
+    beforeChange: (prev, next) => {
+      setDotActive(next);
+    },
+    arrows: false,
+    autoplay: true,
+    infinite: true,
+    speed: 500,
     slidesToShow: 1,
     slidesToScroll: 1,
     appendDots: dots => (
       <div
         style={{
-          width: 'auto'
+          position: "absolute",
+          top: "50%",
+          transform: "translateY(-50%)",
+          left: "0",
+          padding: "10px"
         }}
       >
         <ul style={{ margin: "0px" }}> {dots} </ul>
@@ -22,11 +33,24 @@ const Banner = () => {
     ),
     customPaging: i => (
       <div
-        style={{
+        style={
+         i === dotActive ? 
+         {
           width: "30px",
-          color: "blue",
-          border: "1px blue solid"
-        }}
+          color: "primary",
+          borderRight: "5px red solid",
+          padding: "10px 0",
+          cursor: "pointer"
+         }
+         :
+         {
+          width: "30px",
+          color: "primary",
+          borderRight: "5px #FFFFFF solid",
+          padding: "10px 0",
+          cursor: "pointer"
+         }
+        }
       >
         0{i + 1}
       </div>
