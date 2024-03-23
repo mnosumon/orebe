@@ -152,17 +152,17 @@ const Banner = () => {
   };
   return (
     <Slider {...settings}>
-      <div className="!block w-full h-auto xl:h-[597px]">
+      <div className="!block w-full h-auto lg:max-h-[597px]">
         <Link className='overflow-hidden outline-none'>
           <Image sourc={BannerImg} alt="Banner Img"/>
         </Link>
       </div>
-      <div className="!block w-full h-auto xl:h-[597px]">
+      <div className="!block w-full h-auto lg:max-h-[597px]">
         <Link className='overflow-hidden outline-none'>
           <Image sourc={BannerImg} alt="Banner Img"/>
         </Link>
       </div>
-      <div className="!block w-full h-auto xl:h-[597px]">
+      <div className="!block w-full h-auto lg:max-h-[597px]">
         <Link className='overflow-hidden outline-none'>
           <Image sourc={BannerImg} alt="Banner Img"/>
         </Link>
