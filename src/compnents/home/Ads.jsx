@@ -10,7 +10,7 @@ const Ads = () => {
   return (
     <section>
         <Container>
-            <div className="flex gap-2 sm:gap-4 md:gap-5 lg:gap-10 max-h[780px] lg:my-32 md:my-20 sm:my-12 my-5">
+            <div className="flex gap-2 sm:gap-4 md:gap-5 lg:gap-10 max-h[780px] lg:my-32 md:my-20 sm:my-6 my-4">
                 <Link className="max-w-[50%] max-h-full  block">
                     <Image sourc={AdsImage01} alt="Ads Image01"/>
                 </Link>

@@ -9,11 +9,11 @@ import { Link } from 'react-router-dom';
 
 const ProductCard = () => {
   return (
-    <div className="max-w-[370px]">
-      <Link className="max-h-[370px] relative group overflow-y-hidden bg-red-800 block">
-          <div className=' max-h-[370px] relative'>
+    <div className="max-w-[300px] md:max-w-[354px] lg:max-w-[315px] xl:max-w-[370px]">
+      <Link to="#" className="max-h-[370px] relative group overflow-y-hidden bg-red-800 block">
+          <div className='relative'>
               <Image sourc={SmartWatch} alt="Smart Watch" />
-              <span className='absolute top-5 left-5 font-dm text-sm font-bold leading-normal bg-primary text-white py-3 px-8'>New</span>
+              <span className='absolute top-5 left-5 font-dm text-sm font-bold leading-normal bg-primary text-white py-1 px-2 md:py-2 md:px-4 lg:py-4 lg:px-8'>New</span>
           </div>
           <div className="p-7 bg-white flex flex-col items-end gap-5 w-full absolute -bottom-full group-hover:bottom-0 left-0 duration-500 ease-in-out">
             <div className="flex gap-4 items-center cursor-pointer">
@@ -31,9 +31,9 @@ const ProductCard = () => {
           </div>
       </Link>
       <div className="">
-        <div className="flex justify-between mt-6 mb-4">
-          <h3 className='font-bold font-dm text-xl text-primary'>Basic Crew Neck Tee</h3>
-          <span className='font-bold font-dm text-base leading-8 text-[#767676]'>$44.00</span>
+        <div className="flex justify-between items-center mt-2 md:mt-4 lg:mt-6 mb-1 md:mb-3 lg:mb-4">
+          <h3 className='font-bold font-dm text-sm sm:text-base lg:text-xl text-primary'>Basic Crew Neck Tee</h3>
+          <span className='font-bold font-dm sm lg:text-base leading-5 md:leading-8 text-[#767676]'>$44.00</span>
         </div>
         <span className='font-normal font-dm text-base leading-8 text-[#767676]'>Black</span>
       </div>

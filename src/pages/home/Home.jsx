@@ -3,6 +3,7 @@ import Banner from '../../compnents/home/Banner'
 import Information from '../../compnents/home/Information'
 import Ads from '../../compnents/home/Ads'
 import NewArivals from '../../compnents/home/NewArivals'
+import BestSeller from '../../compnents/home/BestSeller'
 
 const Home = () => {
   return (
@@ -11,6 +12,7 @@ const Home = () => {
       <Information/>
       <Ads/>
       <NewArivals/>
+      <BestSeller/>
     </section>
   )
 }
