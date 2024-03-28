@@ -5,15 +5,15 @@ import HeadingH2 from '../utilities/HeadingH2'
 
 const BestSeller = () => {
   return (
-    <section>
+    <section className=' my-12 md:my-20 lg:my-28'>
         <Container>
-            <HeadingH2 content="New Arrivals" />
-            <div className="flex sm:gap-5 gap-10 flex-wrap justify-center">
-                <ProductCard />
-                <ProductCard/>
-                <ProductCard/>
-                <ProductCard/>
-                <ProductCard/>
+            <HeadingH2 content="Our Bestsellers" />
+            <div className="w-full flex flex-wrap gap-[26px] justify-center">
+              <ProductCard/>
+              <ProductCard/>
+              <ProductCard/>
+              <ProductCard/>
+              <ProductCard/>
             </div>
         </Container>
     </section>

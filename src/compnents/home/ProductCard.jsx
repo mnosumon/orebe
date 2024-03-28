@@ -9,7 +9,7 @@ import { Link } from 'react-router-dom';
 
 const ProductCard = () => {
   return (
-    <div className="max-w-[300px] md:max-w-[354px] lg:max-w-[315px] xl:max-w-[370px]">
+    <div className="max-w-[300px] xl:max-w-[370px]">
       <Link to="#" className="max-h-[370px] relative group overflow-y-hidden bg-red-800 block">
           <div className='relative'>
               <Image sourc={SmartWatch} alt="Smart Watch" />

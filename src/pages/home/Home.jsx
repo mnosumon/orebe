@@ -4,6 +4,7 @@ import Information from '../../compnents/home/Information'
 import Ads from '../../compnents/home/Ads'
 import NewArivals from '../../compnents/home/NewArivals'
 import BestSeller from '../../compnents/home/BestSeller'
+import BigAds from '../../compnents/home/BigAds'
 
 const Home = () => {
   return (
@@ -13,6 +14,7 @@ const Home = () => {
       <Ads/>
       <NewArivals/>
       <BestSeller/>
+      <BigAds/>
     </section>
   )
 }
