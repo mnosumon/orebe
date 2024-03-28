@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom'
 
 const AncorForFooter = ({to, content}) => {
   return (
-    <Link to={to} className='text-sm font-dm leading-praimary text-[#6D6D6D] font-normal inline-block capitalize'>{content}</Link>
+    <Link to={to} className='text-[12px] lg:text-sm font-dm md:leading-praimary text-[#6D6D6D] font-normal inline-block capitalize'>{content}</Link>
   )
 }
 
