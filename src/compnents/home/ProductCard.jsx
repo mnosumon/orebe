@@ -13,7 +13,7 @@ const ProductCard = () => {
       <Link to="#" className="max-h-[370px] relative group overflow-y-hidden bg-red-800 block">
           <div className='relative'>
               <Image sourc={SmartWatch} alt="Smart Watch" />
-              <span className='absolute top-5 left-5 font-dm text-sm font-bold leading-normal bg-primary text-white py-1 px-2 md:py-2 md:px-4 lg:py-4 lg:px-8'>New</span>
+              <span className='absolute top-5 left-5 font-dm text-sm font-bold leading-normal bg-primary text-white py-1 px-2  md:px-3 lg:py-2 lg:px-6'>New</span>
           </div>
           <div className="p-7 bg-white flex flex-col items-end gap-5 w-full absolute -bottom-full group-hover:bottom-0 left-0 duration-500 ease-in-out">
             <div className="flex gap-4 items-center cursor-pointer">
